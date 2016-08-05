@@ -22,6 +22,7 @@
   "main": "./lib/temp",
   "dependencies": {
     "os-tmpdir": "^1.0.0",
+    "mkdirp":" ^0.5.1",
     "rimraf": "~2.2.6"
   },
   "keywords": [

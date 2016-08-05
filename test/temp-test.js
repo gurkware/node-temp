@@ -60,6 +60,9 @@ assert.ok(existsSync(stream.path), 'temp.createWriteStream did not create a file
 var tempDir = temp.mkdirSync("foobar");
 assert.ok(existsSync(tempDir), 'temp.mkdirTemp did not create a directory');
 
+var tempDir2 = temp.mkdirpSync("foobar/subfolder/test");
+assert.ok(existsSync(tempDir2), 'temp.mkdirdTemp did not create a directory');
+
 // cleanupSync()
 temp.cleanupSync();
 assert.ok(!existsSync(stream.path), 'temp.cleanupSync did not remove the createWriteStream file');
